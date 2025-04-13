@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #140a7f;
+  color: #333;
+}
+
+header {
+  background-color: #e9d70d;
+  color: rgb(230, 104, 20);
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  color: rgb(14, 6, 6);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.main2-content {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-content {
+  flex: 2;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #fff6e5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main-content h2,
+.sidebar h2 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #d1c5c5;
+  color: rgb(7, 5, 5);
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Responsive - điện thoại */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+}
+.goiy-section {
+  background-color: #f0f8ff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+  color: #222;
+}
+
+.goiy-section h2 {
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.goiy-section h3 {
+  margin-top: 25px;
+  color: #003399;
+}
+
+.goiy-section ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.goiy-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.goiy-section a:hover {
+  text-decoration: underline;
+}
+.lienhe-section {
+  background-color: #fffbe6;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 900px;
+  color: #333;
+}
+
+.lienhe-section h2 {
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.lienhe-section ul {
+  margin-left: 20px;
+  line-height: 1.7;
+}
+
+.lienhe-section ul li {
+  margin-bottom: 10px;
+}
+
+.lienhe-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.lienhe-section a:hover {
+  text-decoration: underline;
+}
+.home-background {
+  background-image: url("Picture/tapthe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 60px 20px;
+}
+
+.home-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* lớp mờ */
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.home-background * {
+  position: relative;
+  z-index: 1;
+}
+
+.content-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 850px;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.content-box h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+}
+
+.content-box blockquote {
+  font-style: italic;
+  color: #0066cc;
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 4px solid #0066cc;
+}
+
+.content-box ul {
+  margin-left: 20px;
+  list-style: disc;
+}
